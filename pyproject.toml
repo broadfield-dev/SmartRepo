@@ -24,13 +24,12 @@ dependencies = [
     "tqdm>=4.60.0",
     "python-dotenv",
     "requests",
-    "huggingface_hub",
-    "gradio>=5.30.0
+    "huggingface_hub"
 ]
-
 [project.urls]
 "Homepage" = "https://github.com/broadfield-dev/smartrepo"
 "Bug Tracker" = "https://github.com/broadfield-dev/smartrepo/issues"
 
-[tool.setuptools.packages.find]
-where = ["core"]
+[tool.setuptools]
+package-dir = {"smartrepo" = "core"}
+packages = ["smartrepo"]
